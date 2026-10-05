@@ -1,0 +1,32 @@
+# Python environments and generated files
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+
+# Local AI services, credentials, and secrets
+.setup/
+.langflow/
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.secret
+*.token
+*credentials*.txt
+*token*.txt
+*secret*.txt
+
+# Local knowledge may contain private user documents
+knowledge/*.md
+knowledge/*.txt
+
+# Local installer and diagnostic output
+.wsl-*-output.*
+*.log
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db

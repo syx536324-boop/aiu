@@ -1,0 +1,38 @@
+# Publish only the static VALORANT web client; local secrets and Python services are never packaged.
+name: Publish AIU VALORANT preview
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - "valorant_platform/web/**"
+      - ".github/workflows/publish-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: valorant_platform/web
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,1013 @@
+[
+  {
+    "name": "Astra",
+    "cn": "亚星卓",
+    "role": "控场",
+    "aliases": [
+      "亚星卓",
+      "Astra"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/astra/",
+    "skills": [
+      {
+        "name": "星体形态",
+        "description": "切入全局视角布置星星；也可回收星星并短暂生成烟雾。",
+        "type": "核心机制",
+        "key": "X"
+      },
+      {
+        "name": "引力井",
+        "description": "激活星星形成引力场，将附近玩家拉向中心并使其易受伤害。",
+        "key": "C"
+      },
+      {
+        "name": "新星脉冲",
+        "description": "激活星星后蓄力爆发，使范围内玩家受到震荡。",
+        "key": "Q"
+      },
+      {
+        "name": "星云 / 散逸",
+        "description": "将星星化为遮挡视线的烟雾；也能回收星星，短暂制造烟雾后再部署。",
+        "key": "E"
+      },
+      {
+        "name": "宇宙裂隙",
+        "description": "在地图上划出一道长墙，阻挡子弹并大幅削弱墙另一侧的声音。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/41fb69c1-4189-7b37-f117-bcaf1e96f1bf/fullportrait.png"
+  },
+  {
+    "name": "Breach",
+    "cn": "铁臂",
+    "role": "先锋",
+    "aliases": [
+      "铁臂",
+      "布雷奇",
+      "Breach"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/breach/",
+    "skills": [
+      {
+        "name": "余震",
+        "description": "向墙后发射聚能爆破，短暂延迟后反复震荡，对范围内玩家造成伤害。",
+        "key": "C"
+      },
+      {
+        "name": "闪点",
+        "description": "让闪光从墙体另一侧爆发，致盲未能及时转开视线的玩家。",
+        "key": "Q"
+      },
+      {
+        "name": "震荡波",
+        "description": "沿直线蓄力释放地震冲击，使路径上的玩家受到震荡。",
+        "key": "E"
+      },
+      {
+        "name": "惊雷之击",
+        "description": "向大范围扇形区域连续释放地震波，将敌人击飞并震荡。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/fullportrait.png"
+  },
+  {
+    "name": "Brimstone",
+    "cn": "炼狱",
+    "role": "控场",
+    "aliases": [
+      "炼狱",
+      "布史东",
+      "Brimstone"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/brimstone/",
+    "skills": [
+      {
+        "name": "燃烧弹",
+        "description": "发射一枚榴弹，落地后形成持续燃烧区域，对其中玩家造成伤害。",
+        "key": "Q"
+      },
+      {
+        "name": "激励信标",
+        "description": "部署信标，为经过的队友提供战斗强化效果。",
+        "key": "C"
+      },
+      {
+        "name": "空投烟幕",
+        "description": "通过战术地图选点，在指定位置投放可遮挡视线的烟雾。",
+        "key": "E"
+      },
+      {
+        "name": "轨道轰炸",
+        "description": "通过地图指定区域呼叫持续轨道打击，对范围内敌人造成大量伤害。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/fullportrait.png"
+  },
+  {
+    "name": "Chamber",
+    "cn": "尚勃勒",
+    "role": "哨卫",
+    "aliases": [
+      "尚勃勒",
+      "钱博尔",
+      "Chamber"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/chamber/",
+    "skills": [
+      {
+        "name": "猎头",
+        "description": "装备高威力手枪，可使用瞄准射击应对远距离交战。",
+        "key": "Q"
+      },
+      {
+        "name": "慢行特区",
+        "description": "布置隐形陷阱，探测到敌人后制造减速区域；购买阶段可回收再部署。",
+        "key": "C"
+      },
+      {
+        "name": "法式转移",
+        "description": "放置传送锚点，在可用范围内快速传送至另一锚点。",
+        "key": "E"
+      },
+      {
+        "name": "神枪手",
+        "description": "召唤专属狙击枪，击杀敌人会在其位置留下减速区域。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/fullportrait.png"
+  },
+  {
+    "name": "Clove",
+    "cn": "暮蝶",
+    "role": "控场",
+    "aliases": [
+      "暮蝶",
+      "珂乐芙",
+      "Clove"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/clove/",
+    "skills": [
+      {
+        "name": "惊奇干涉",
+        "description": "投掷碎片，在落地后爆发，使范围内的敌人暂时受到衰减。",
+        "key": "Q"
+      },
+      {
+        "name": "别来烦我",
+        "description": "吸收附近阵亡敌人的生命能量，短时间获得移速与生命恢复。",
+        "key": "C"
+      },
+      {
+        "name": "再见了",
+        "description": "从全局视角投放烟雾；阵亡后仍能在短时间内使用此技能。",
+        "key": "E"
+      },
+      {
+        "name": "还没死呢",
+        "description": "阵亡后短暂复活；需在时限内取得击杀或助攻，才能留在战场。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/fullportrait.png"
+  },
+  {
+    "name": "Cypher",
+    "cn": "零",
+    "role": "哨卫",
+    "aliases": [
+      "零",
+      "瑟符",
+      "Cypher"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/cypher/",
+    "skills": [
+      {
+        "name": "陷阱绊索",
+        "description": "在两点之间布设隐形绊索；敌人触发后会被限制、暴露位置并受到震荡。",
+        "key": "C"
+      },
+      {
+        "name": "网络牢笼",
+        "description": "投掷并激活装置，形成阻挡视线的区域，同时提示有敌人穿过。",
+        "key": "Q"
+      },
+      {
+        "name": "监控摄影机",
+        "description": "将摄像机安置在墙面并远程查看，可发射追踪飞镖标记敌人。",
+        "key": "E"
+      },
+      {
+        "name": "神经窃取",
+        "description": "对附近阵亡敌人使用，短暂揭示仍存活的敌方位置。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png"
+  },
+  {
+    "name": "Deadlock",
+    "cn": "钢索",
+    "role": "哨卫",
+    "aliases": [
+      "钢索",
+      "Deadlock"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/deadlock/",
+    "skills": [
+      {
+        "name": "重力捕网",
+        "description": "投掷捕网，落地后使范围内敌人被迫蹲下并减速；敌人可自行挣脱。",
+        "key": "C"
+      },
+      {
+        "name": "声波感测器",
+        "description": "部署传感器，侦测附近脚步、枪声等明显声响，并震荡范围内敌人。",
+        "key": "Q"
+      },
+      {
+        "name": "屏障网",
+        "description": "投出装置形成数道阻挡移动的屏障，敌人仍可穿过屏障射击。",
+        "key": "E"
+      },
+      {
+        "name": "湮灭",
+        "description": "发射纳米线束缚首个命中的敌人并将其拖行；若未及时破坏线茧，目标会被消灭。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/cc8b64c8-4b25-4ff9-6e7f-37b4da43d235/fullportrait.png"
+  },
+  {
+    "name": "Fade",
+    "cn": "黑梦",
+    "role": "先锋",
+    "aliases": [
+      "黑梦",
+      "Fade"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/fade/",
+    "skills": [
+      {
+        "name": "缚魄",
+        "description": "投出恶梦之墨，落地后困住范围内敌人，使其难以逃离并受到衰减。",
+        "key": "Q"
+      },
+      {
+        "name": "夜魇",
+        "description": "投放可部署的侦查之眼，发现视野内敌人并留下可追踪的恶梦轨迹。",
+        "key": "E"
+      },
+      {
+        "name": "潜行梦魇",
+        "description": "释放恶梦生物沿轨迹搜寻敌人，使目标受限视野并暴露追踪路径。",
+        "key": "C"
+      },
+      {
+        "name": "夜幕降临",
+        "description": "向前方释放恶梦能量波，使命中的敌人失聪、衰减并留下追踪轨迹。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/fullportrait.png"
+  },
+  {
+    "name": "Gekko",
+    "cn": "盖可",
+    "role": "先锋",
+    "aliases": [
+      "盖可",
+      "盖克",
+      "Gekko"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/gekko/",
+    "skills": [
+      {
+        "name": "小怪物回收",
+        "description": "部分伙伴使用后会变成球体；靠近后可回收，短暂冷却后再次使用。",
+        "type": "核心机制",
+        "key": null
+      },
+      {
+        "name": "眩晕鸟",
+        "description": "放出伙伴向前侦察并向视野内敌人喷射能量；可协助安装或拆除辐能核心。",
+        "key": "E"
+      },
+      {
+        "name": "顽皮搭档",
+        "description": "操控伙伴向前突进并震荡敌人；也可让它协助安装或拆除辐能核心。",
+        "key": "Q"
+      },
+      {
+        "name": "莫什坑",
+        "description": "投掷黏液弹，落地后分裂覆盖区域，短暂延迟后爆发造成伤害。",
+        "key": "C"
+      },
+      {
+        "name": "狂徒",
+        "description": "操控伙伴冲入敌阵并引爆拘捕附近敌人；结束后可回收球体再次使用。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png"
+  },
+  {
+    "name": "Harbor",
+    "cn": "海神",
+    "role": "控场",
+    "aliases": [
+      "海神",
+      "哈泊",
+      "Harbor"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/harbor/",
+    "skills": [
+      {
+        "name": "瀑布",
+        "description": "向前推进一道水墙，可提前停止；碰到的玩家会被减速。",
+        "key": "C"
+      },
+      {
+        "name": "海盾",
+        "description": "投出水球形成烟雾罩；可为罩体加上能抵挡子弹的护盾。",
+        "key": "Q"
+      },
+      {
+        "name": "高涨",
+        "description": "沿准星方向铺开一道可弯折的长水墙，遮挡视线并减速经过者。",
+        "key": "E"
+      },
+      {
+        "name": "逆流",
+        "description": "在大型区域召唤水流冲击，反复震荡其中的敌人。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/95b78ed7-4637-86d9-7e41-71ba8c293152/fullportrait.png"
+  },
+  {
+    "name": "Iso",
+    "cn": "壹决",
+    "role": "决斗",
+    "aliases": [
+      "壹决",
+      "离索",
+      "Iso"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/iso/",
+    "skills": [
+      {
+        "name": "制式护盾",
+        "description": "向前生成一道移动的防弹能量墙，为推进路线提供掩护。",
+        "key": "C"
+      },
+      {
+        "name": "削弱",
+        "description": "投出能穿透墙体的能量射弹，使命中的敌人短暂易受伤害。",
+        "key": "Q"
+      },
+      {
+        "name": "双重射击",
+        "description": "进入专注状态；击杀或助攻可生成能量球，射击能量球可获得抵挡一次伤害的护盾。",
+        "key": "E"
+      },
+      {
+        "name": "击杀契约",
+        "description": "向前开辟决斗领域，将首个命中的敌人拉入一对一对决。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/fullportrait.png"
+  },
+  {
+    "name": "Jett",
+    "cn": "捷风",
+    "role": "决斗",
+    "aliases": [
+      "捷风",
+      "婕提",
+      "Jett"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/jett/",
+    "skills": [
+      {
+        "name": "顺风式",
+        "description": "迅速向当前移动方向冲刺；使用前可短暂储存冲刺充能。",
+        "key": "E"
+      },
+      {
+        "name": "乘风式",
+        "description": "将捷风向上抛起，快速抵达高处或改变进场角度。",
+        "key": "Q"
+      },
+      {
+        "name": "瞬云",
+        "description": "投出短暂遮挡视线的云雾；按住技能键可控制云雾转向。",
+        "key": "C"
+      },
+      {
+        "name": "飓刃",
+        "description": "装备精准飞刀，可单发或连投；击杀后会恢复飞刀。",
+        "key": "X"
+      },
+      {
+        "name": "飘风身法",
+        "description": "下落时按住跳跃键可以滑翔，控制落点与下降速度。",
+        "type": "核心机制",
+        "key": null
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/fullportrait.png"
+  },
+  {
+    "name": "KAY/O",
+    "cn": "KAY/O",
+    "role": "先锋",
+    "aliases": [
+      "KAY/O",
+      "KAYO",
+      "凯欧"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/kay-o/",
+    "skills": [
+      {
+        "name": "碎片/绝杀",
+        "description": "投出爆破手雷，在范围内持续爆炸并造成伤害。",
+        "key": "C"
+      },
+      {
+        "name": "闪光/驱动",
+        "description": "投掷闪光弹；可选择高抛或更快爆炸的低抛方式。",
+        "key": "Q"
+      },
+      {
+        "name": "归零/零点",
+        "description": "投出抑制匕首，命中后探测并暂时封锁附近敌人的技能。",
+        "key": "E"
+      },
+      {
+        "name": "无效/指令",
+        "description": "进入强化状态并周期性释放抑制脉冲；倒地后队友可在时限内将其救起。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/fullportrait.png"
+  },
+  {
+    "name": "Killjoy",
+    "cn": "奇乐",
+    "role": "哨卫",
+    "aliases": [
+      "奇乐",
+      "恺宙",
+      "Killjoy"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/killjoy/",
+    "skills": [
+      {
+        "name": "纳米蜂群",
+        "description": "投放隐形装置并远程激活，在区域内释放造成伤害的纳米蜂群。",
+        "key": "C"
+      },
+      {
+        "name": "报警机器人",
+        "description": "部署隐形机器人追击附近敌人，命中后使目标易受伤害；可回收再部署。",
+        "key": "Q"
+      },
+      {
+        "name": "炮台",
+        "description": "放置自动炮台，自动攻击进入其扇形侦测范围的敌人。",
+        "key": "E"
+      },
+      {
+        "name": "全面封锁",
+        "description": "部署装置并蓄力，覆盖大范围拘束敌人；装置可被对方摧毁。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/fullportrait.png"
+  },
+  {
+    "name": "Miks",
+    "cn": "迷核",
+    "role": "控场",
+    "aliases": [
+      "迷核",
+      "米克什",
+      "Miks"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/miks/",
+    "skills": [
+      {
+        "name": "Harmonize · 调和",
+        "description": "为自己和一名队友提供战斗强化效果；取得击杀后效果可刷新。",
+        "key": "Q"
+      },
+      {
+        "name": "M-pulse",
+        "description": "投出音波装置，可切换为震荡或治疗模式，对落点附近玩家产生对应效果。",
+        "key": "C"
+      },
+      {
+        "name": "Waveform",
+        "description": "通过地图选择位置并投放多枚烟雾，遮挡指定区域视线。",
+        "key": "E"
+      },
+      {
+        "name": "Bassquake",
+        "description": "蓄力向前释放音波冲击，将敌人击退并造成失聪与减速。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/7c8a4701-4de6-9355-b254-e09bc2a34b72/fullportrait.png"
+  },
+  {
+    "name": "Neon",
+    "cn": "霓虹",
+    "role": "决斗",
+    "aliases": [
+      "霓虹",
+      "妮虹",
+      "Neon"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/neon/",
+    "skills": [
+      {
+        "name": "快速通道",
+        "description": "沿两侧向前延伸电墙，遮挡视线并伤害穿过的敌人。",
+        "key": "C"
+      },
+      {
+        "name": "中继闪电",
+        "description": "投出可弹跳的电能装置，落地后使附近敌人受到震荡。",
+        "key": "Q"
+      },
+      {
+        "name": "高速档",
+        "description": "消耗能量快速奔跑，并可向前滑行突进；能量会随时间恢复。",
+        "key": "E"
+      },
+      {
+        "name": "超限暴走",
+        "description": "集中电能形成可控电击光束，击杀敌人会刷新持续时间。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/bb2a4828-46eb-8cd1-e765-15848195d751/fullportrait.png"
+  },
+  {
+    "name": "Omen",
+    "cn": "幽影",
+    "role": "控场",
+    "aliases": [
+      "幽影",
+      "欧门",
+      "Omen"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/omen/",
+    "skills": [
+      {
+        "name": "暗魇",
+        "description": "发射可穿透墙体的暗影弹，缩窄命中玩家的视野。",
+        "key": "Q"
+      },
+      {
+        "name": "黑瘴",
+        "description": "从全局视角指定位置投放持久烟雾，阻挡敌方视线。",
+        "key": "E"
+      },
+      {
+        "name": "暗影步",
+        "description": "选择可见位置并短暂引导，随后传送到该处。",
+        "key": "C"
+      },
+      {
+        "name": "影袭",
+        "description": "进入地图视角并选择传送地点；抵达前可被敌人打断。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/8e253930-4c05-31dd-1b6c-968525494517/fullportrait.png"
+  },
+  {
+    "name": "Phoenix",
+    "cn": "不死鸟",
+    "role": "决斗",
+    "aliases": [
+      "不死鸟",
+      "菲尼克斯",
+      "Phoenix"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/phoenix/",
+    "skills": [
+      {
+        "name": "弧光闪烁",
+        "description": "投掷可左转或右转的闪光球，短暂延迟后致盲直视它的玩家。",
+        "key": "Q"
+      },
+      {
+        "name": "火热手感",
+        "description": "投出火焰球形成燃烧区域，对敌人造成伤害并治疗不死鸟。",
+        "key": "E"
+      },
+      {
+        "name": "烈焰之墙",
+        "description": "竖起可弯折的火墙，遮挡视线并灼伤敌人；不死鸟穿过时会恢复生命。",
+        "key": "C"
+      },
+      {
+        "name": "再来一次",
+        "description": "在当前位置留下标记后冲锋；持续时间结束或阵亡时回到标记处。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/eb93336a-449b-9c1b-0a54-a891f7921d69/fullportrait.png"
+  },
+  {
+    "name": "Raze",
+    "cn": "雷兹",
+    "role": "决斗",
+    "aliases": [
+      "雷兹",
+      "芮兹",
+      "Raze"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/raze/",
+    "skills": [
+      {
+        "name": "爆破包",
+        "description": "放置可粘附表面的炸药包，再次使用引爆并击退附近目标；雷兹可借力跳跃。",
+        "key": "Q"
+      },
+      {
+        "name": "爆破机器人",
+        "description": "放出沿地面前进的机器人；发现敌人后会追击并在接近时爆炸。",
+        "key": "C"
+      },
+      {
+        "name": "彩弹",
+        "description": "投出集束手雷，爆炸后再分裂出多枚子炸弹。",
+        "key": "E"
+      },
+      {
+        "name": "惊喜彩蛋",
+        "description": "装备火箭发射器，发射后在大范围爆炸并造成高额伤害。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/fullportrait.png"
+  },
+  {
+    "name": "Reyna",
+    "cn": "芮娜",
+    "role": "决斗",
+    "aliases": [
+      "芮娜",
+      "蕾娜",
+      "Reyna"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/reyna/",
+    "skills": [
+      {
+        "name": "睥睨",
+        "description": "投出可被摧毁的灵体之眼，使看见它的敌人视野受限。",
+        "key": "C"
+      },
+      {
+        "name": "吞噬",
+        "description": "消耗附近灵魂球快速恢复生命；过量治疗会形成临时护甲。",
+        "key": "Q"
+      },
+      {
+        "name": "逐散",
+        "description": "消耗灵魂球短暂变得无法被选中；在女皇状态下还可获得隐身效果。",
+        "key": "E"
+      },
+      {
+        "name": "女皇旨令",
+        "description": "进入强化状态，提升战斗能力；击杀会刷新持续时间并自动触发吞噬。",
+        "key": "X"
+      },
+      {
+        "name": "灵魂收割",
+        "description": "芮娜伤害或击杀的敌人阵亡时会留下短暂存在的灵魂球。",
+        "type": "核心机制",
+        "key": null
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/fullportrait.png"
+  },
+  {
+    "name": "Sage",
+    "cn": "贤者",
+    "role": "哨卫",
+    "aliases": [
+      "贤者",
+      "圣祈",
+      "Sage"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/sage/",
+    "skills": [
+      {
+        "name": "屏障法球",
+        "description": "生成一面坚固的冰墙；施放时可旋转并选择建造位置。",
+        "key": "C"
+      },
+      {
+        "name": "缓速法球",
+        "description": "投出法球，在落点形成减速区域，经过的玩家会被减速。",
+        "key": "Q"
+      },
+      {
+        "name": "治疗法球",
+        "description": "持续治疗一名队友；也可对自己施放治疗。",
+        "key": "E"
+      },
+      {
+        "name": "复活",
+        "description": "短暂引导后复活一名阵亡队友。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/569fdd95-4d10-43ab-ca70-79becc718b46/fullportrait.png"
+  },
+  {
+    "name": "Skye",
+    "cn": "斯凯",
+    "role": "先锋",
+    "aliases": [
+      "斯凯",
+      "Skye"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/skye/",
+    "skills": [
+      {
+        "name": "辟路雄狮",
+        "description": "操控猛兽侦察并扑击，对直接命中的敌人造成伤害与震荡。",
+        "key": "Q"
+      },
+      {
+        "name": "引路之隼",
+        "description": "操控飞鹰转弯并引爆闪光；若命中敌人会提供提示音。",
+        "key": "E"
+      },
+      {
+        "name": "自然之愈",
+        "description": "为视线内队友持续恢复生命值，治疗能量用尽后结束。",
+        "key": "C"
+      },
+      {
+        "name": "追猎之灵",
+        "description": "放出追踪灵体寻找附近敌人，被追上的目标会受限视野。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/fullportrait.png"
+  },
+  {
+    "name": "Sova",
+    "cn": "猎枭",
+    "role": "先锋",
+    "aliases": [
+      "猎枭",
+      "苏法",
+      "Sova"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/sova/",
+    "skills": [
+      {
+        "name": "震波箭",
+        "description": "发射可弹射的爆破箭，命中后对附近玩家造成伤害。",
+        "key": "Q"
+      },
+      {
+        "name": "侦察箭",
+        "description": "发射侦察箭扫描周围敌人并揭露位置；箭矢可被摧毁。",
+        "key": "E"
+      },
+      {
+        "name": "猎枭无人机",
+        "description": "远程操控无人机侦察，可发射标记飞镖追踪命中的敌人。",
+        "key": "C"
+      },
+      {
+        "name": "猎者之怒",
+        "description": "透过墙体连续释放远距离能量箭，对命中的敌人造成伤害并揭露位置。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/320b2a48-4d9b-a075-30f1-1f93a9b638fa/fullportrait.png"
+  },
+  {
+    "name": "Tejo",
+    "cn": "钛狐",
+    "role": "先锋",
+    "aliases": [
+      "钛狐",
+      "Tejo"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/tejo/",
+    "skills": [
+      {
+        "name": "匿踪无人机",
+        "description": "操控无人机侦察并发射能量波，抑制命中目标的技能并揭露其位置。",
+        "key": "Q"
+      },
+      {
+        "name": "特殊快递",
+        "description": "投掷可弹跳的黏着手雷，在爆炸范围内造成震荡。",
+        "key": "C"
+      },
+      {
+        "name": "导引齐射",
+        "description": "通过地图指定最多两处位置，向目标区域发射导引导弹。",
+        "key": "E"
+      },
+      {
+        "name": "末日浩劫",
+        "description": "在地图上选定打击路径，随后沿路径发动连续爆炸。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/b444168c-4e35-8076-db47-ef9bf368f384/fullportrait.png"
+  },
+  {
+    "name": "Veto",
+    "cn": "禁灭",
+    "role": "哨卫",
+    "aliases": [
+      "禁灭",
+      "维托",
+      "Veto"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/veto/",
+    "skills": [
+      {
+        "name": "锁喉",
+        "description": "投掷黏性陷阱束缚敌人，并使其失聪、受到衰减；启动前可被摧毁。",
+        "key": "C"
+      },
+      {
+        "name": "穿越之径",
+        "description": "放置传送漩涡，在范围内看向漩涡即可传送至其位置。",
+        "key": "E"
+      },
+      {
+        "name": "拦截器",
+        "description": "部署后可摧毁会被玩家反弹或可被枪械破坏的敌方技能装置。",
+        "key": "Q"
+      },
+      {
+        "name": "基因突变",
+        "description": "进入强化形态，获得战斗强化与生命恢复，并免疫负面状态。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/92eeef5d-43b5-1d4a-8d03-b3927a09034b/fullportrait.png"
+  },
+  {
+    "name": "Viper",
+    "cn": "蝰蛇",
+    "role": "控场",
+    "aliases": [
+      "蝰蛇",
+      "薇蝮",
+      "Viper"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/viper/",
+    "skills": [
+      {
+        "name": "毒雾",
+        "description": "放置可远程启停的毒气装置，消耗燃料形成遮挡视线的毒雾。",
+        "key": "Q"
+      },
+      {
+        "name": "剧毒幕",
+        "description": "布置一排毒气发射器，启用后形成长距离毒墙并消耗燃料。",
+        "key": "E"
+      },
+      {
+        "name": "蛇吻",
+        "description": "投出化学药剂，形成腐蚀区域并使其中敌人易受伤害。",
+        "key": "C"
+      },
+      {
+        "name": "蝰腹",
+        "description": "释放大范围毒雾，限制视野并使进入的敌人持续受到衰减。",
+        "key": "X"
+      },
+      {
+        "name": "毒素与燃料",
+        "description": "毒素会使敌人持续衰减；毒气技能共享燃料，关闭后燃料逐渐恢复。",
+        "type": "核心机制",
+        "key": null
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/707eab51-4836-f488-046a-cda6bf494859/fullportrait.png"
+  },
+  {
+    "name": "Vyse",
+    "cn": "维斯",
+    "role": "哨卫",
+    "aliases": [
+      "维斯",
+      "薇丝",
+      "Vyse"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/vyse/",
+    "skills": [
+      {
+        "name": "剃刀藤蔓",
+        "description": "投出隐形液态金属网，激活后减速并伤害踩入其中的敌人。",
+        "key": "C"
+      },
+      {
+        "name": "剪切",
+        "description": "在墙面安置隐形陷阱；敌人触发后，其身后会升起短暂隔绝通道的金属墙。",
+        "key": "Q"
+      },
+      {
+        "name": "弧光玫瑰",
+        "description": "在墙上安置闪光装置并远程触发，使面向它的玩家致盲；可回收再部署。",
+        "key": "E"
+      },
+      {
+        "name": "钢园",
+        "description": "释放金属藤蔓脉冲，使范围内敌人的主要武器暂时无法使用。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/efba5359-4016-a1e5-7626-b1ae76895940/fullportrait.png"
+  },
+  {
+    "name": "Waylay",
+    "cn": "幻棱",
+    "role": "决斗",
+    "aliases": [
+      "幻棱",
+      "维蕾",
+      "Waylay"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/waylay/",
+    "skills": [
+      {
+        "name": "浸染",
+        "description": "投出聚合光弹，爆炸后大幅降低范围内玩家的移动速度与射速。",
+        "key": "C"
+      },
+      {
+        "name": "光速",
+        "description": "向前快速冲刺，可再次施放进行第二次突进。",
+        "key": "Q"
+      },
+      {
+        "name": "折射",
+        "description": "放置光之标记，随后可快速折返回标记处；移动途中短暂无敌。",
+        "key": "E"
+      },
+      {
+        "name": "聚合之道",
+        "description": "投射扩散光束；短暂延迟后自身加速，光束范围内的敌人受到阻碍。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/df1cb487-4902-002e-5c17-d28e83e78588/fullportrait.png"
+  },
+  {
+    "name": "Yoru",
+    "cn": "夜露",
+    "role": "决斗",
+    "aliases": [
+      "夜露",
+      "夜戮",
+      "Yoru"
+    ],
+    "official_url": "https://playvalorant.com/zh-tw/agents/yoru/",
+    "skills": [
+      {
+        "name": "攻其不备",
+        "description": "投出可从墙面反弹的次元碎片，碰撞后爆发闪光。",
+        "key": "Q"
+      },
+      {
+        "name": "不请自来",
+        "description": "放置传送锚点并传送至其位置；也可投出锚点远程传送。",
+        "key": "E"
+      },
+      {
+        "name": "间谍",
+        "description": "放出会向前移动的分身；分身被敌人击中时爆发闪光。",
+        "key": "C"
+      },
+      {
+        "name": "次元漫步",
+        "description": "进入另一维度移动，不会被敌人看见或攻击，并可侦察周围区域。",
+        "key": "X"
+      }
+    ],
+    "portrait_url": "https://media.valorant-api.com/agents/7f94d92c-4234-0a36-9646-3a87eb8b5c89/fullportrait.png"
+  }
+]
