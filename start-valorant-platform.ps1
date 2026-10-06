@@ -1,4 +1,4 @@
-# Start the local VALORANT web app without opening a visible console window.
+﻿# Start the local VALORANT web app without opening a visible console window.
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $python = Join-Path $projectRoot '.venv\Scripts\python.exe'
@@ -10,7 +10,7 @@ if (-not (Test-Path -LiteralPath $python)) {
 
 $ready = $false
 try {
-    $null = Invoke-WebRequest -Uri "$appUrl/api/health" -TimeoutSec 2
+    $null = Invoke-WebRequest -Uri "$appUrl/api/health" -UseBasicParsing -TimeoutSec 2
     $ready = $true
 } catch {
     $ready = $false
@@ -21,7 +21,7 @@ if (-not $ready) {
     for ($attempt = 0; $attempt -lt 30; $attempt++) {
         Start-Sleep -Milliseconds 500
         try {
-            $null = Invoke-WebRequest -Uri "$appUrl/api/health" -TimeoutSec 2
+            $null = Invoke-WebRequest -Uri "$appUrl/api/health" -UseBasicParsing -TimeoutSec 2
             $ready = $true
             break
         } catch {

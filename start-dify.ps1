@@ -1,5 +1,7 @@
 # Start the local Docker engine and Dify Compose stack, then open the local web UI.
 
+param([switch]$SkipOpenBrowser)
+
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $composeDirectory = Join-Path $projectRoot '.setup\dify-src\docker'
@@ -142,7 +144,9 @@ for ($attempt = 0; $attempt -lt 60; $attempt++) {
     Start-Sleep -Seconds 3
 }
 
-Start-Process -FilePath $agentUrl
+if (-not $SkipOpenBrowser) {
+    Start-Process -FilePath $agentUrl
+}
 if ($webReady) {
     Write-Host "Dify agent is ready at $agentUrl"
 }

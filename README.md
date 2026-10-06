@@ -22,7 +22,7 @@ Ollama 在本机提供模型 API：`http://127.0.0.1:11434`。当前已安装 `q
 
 ## VALORANT 智能体 Web 原型
 
-先启动 Dify 智能体，再运行 `powershell -NoProfile -ExecutionPolicy Bypass -File .\start-valorant-platform.ps1`，浏览器会打开 `http://127.0.0.1:8780`。页面提供本地问答入口、全部特工库和特工详情导航；29 位特工的技能介绍为官网内容的中文摘要，并显示默认 PC 按键；技能点位页提供 13 张常规战术地图的选项，点选地图进入对应的空白页面，后续可补充点位。详情横幅使用网络托管的特工立绘，离线时仍可浏览文字资料，但图片可能无法加载。Dify API 密钥由本机后端从 `.setup/dify-agent-api.txt` 读取，不进入浏览器代码。
+双击桌面的“打开 AIU 本地问答”快捷方式，可依次启动 Ollama、Docker、Dify 和网站，并在浏览器打开 `http://127.0.0.1:8780/#/`；首次启动可能需要几分钟。也可以在项目目录运行 `powershell -NoProfile -ExecutionPolicy Bypass -File .\start-aiu-chat.ps1`。如果 Dify 已在运行，仅启动网站可运行 `start-valorant-platform.ps1`。页面提供本地问答入口、全部特工库和特工详情导航；29 位特工的技能介绍为官网内容的中文摘要，并显示默认 PC 按键；技能点位页提供 13 张常规战术地图的选项，点选地图进入对应的空白页面，后续可补充点位。详情横幅使用网络托管的特工立绘，离线时仍可浏览文字资料，但图片可能无法加载。Dify API 密钥由本机后端从 `.setup/dify-agent-api.txt` 读取，不进入浏览器代码。
 
 仓库配置了 GitHub Pages 静态预览工作流：推送网站前端后会发布 `valorant_platform/web/`。公开预览可浏览特工、技能与地图资料，但智能问答不可用，因为 Python 后端、Dify 和 Ollama 仍运行在本机。所有 Dify 密钥、管理员凭据、文件服务 token 和本机知识文档均被 Git 忽略。首次发布需在仓库的 **Settings → Pages** 中选择 **GitHub Actions** 作为构建源。
 
