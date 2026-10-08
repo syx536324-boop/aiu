@@ -1,0 +1,128 @@
+[
+  {
+    "id": "yolo2016",
+    "short": "YOLO",
+    "title": "You Only Look Once: Unified, Real-Time Object Detection",
+    "venue": "CVPR",
+    "year": 2016,
+    "topics": [
+      "vision",
+      "yolo",
+      "detection"
+    ],
+    "source": "https://openaccess.thecvf.com/content_cvpr_2016/html/Redmon_You_Only_Look_CVPR_2016_paper.html",
+    "verified": "2026-10-07",
+    "authority": "正式 CVPR 2016 论文；CVF 会议页面与论文出处可核查。",
+    "intro": "实时目标检测的代表性早期工作；此项为基础文献目录示例。"
+  },
+  {
+    "id": "resnet2016",
+    "short": "ResNet",
+    "title": "Deep Residual Learning for Image Recognition",
+    "venue": "CVPR",
+    "year": 2016,
+    "topics": [
+      "vision",
+      "backbone",
+      "classification"
+    ],
+    "source": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+    "verified": "2026-10-07",
+    "authority": "正式 CVPR 2016 论文；CVF 官方会议记录。",
+    "intro": "理解残差连接与视觉骨干网络。"
+  },
+  {
+    "id": "sam2023",
+    "short": "SAM",
+    "title": "Segment Anything",
+    "venue": "ICCV",
+    "year": 2023,
+    "topics": [
+      "vision",
+      "segmentation",
+      "foundation"
+    ],
+    "source": "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+    "verified": "2026-10-07",
+    "authority": "正式 ICCV 2023 论文；CVF 官方会议记录。",
+    "intro": "从目标检测扩展到可提示图像分割。"
+  },
+  {
+    "id": "vit2021",
+    "short": "ViT",
+    "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+    "venue": "ICLR",
+    "year": 2021,
+    "topics": [
+      "vision",
+      "transformer"
+    ],
+    "source": "https://openreview.net/forum?id=YicbFdNTTy",
+    "verified": "2026-10-07",
+    "authority": "ICLR 2021；OpenReview 会议条目，arXiv 作者版本提供补充来源。",
+    "intro": "将 Transformer 用于图像分类的代表性工作。"
+  },
+  {
+    "id": "attention2017",
+    "short": "Transformer",
+    "title": "Attention Is All You Need",
+    "venue": "NeurIPS",
+    "year": 2017,
+    "topics": [
+      "language",
+      "transformer",
+      "agent"
+    ],
+    "source": "https://papers.nips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+    "verified": "2026-10-07",
+    "authority": "正式 NeurIPS 2017 论文；官方 proceedings 条目。",
+    "intro": "理解千问等现代语言模型的基础架构。"
+  },
+  {
+    "id": "react2023",
+    "short": "ReAct",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "venue": "ICLR",
+    "year": 2023,
+    "topics": [
+      "agent",
+      "tools",
+      "reasoning"
+    ],
+    "source": "https://openreview.net/forum?id=WE_vluYUL-X",
+    "verified": "2026-10-07",
+    "authority": "ICLR 2023；作者论文首页标明正式会议发表。",
+    "intro": "理解模型怎样交替使用推理和外部工具。"
+  },
+  {
+    "id": "lora2022",
+    "short": "LoRA",
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "venue": "ICLR",
+    "year": 2022,
+    "topics": [
+      "language",
+      "finetuning",
+      "edge"
+    ],
+    "source": "https://openreview.net/forum?id=nZeVKeeFYf9",
+    "verified": "2026-10-07",
+    "authority": "ICLR 2022；OpenReview 会议条目及作者论文。",
+    "intro": "理解参数高效微调；本项目不会直接训练大模型。"
+  },
+  {
+    "id": "bert2019",
+    "short": "BERT",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "venue": "NAACL",
+    "year": 2019,
+    "topics": [
+      "language",
+      "representation"
+    ],
+    "source": "https://aclanthology.org/N19-1423/",
+    "verified": "2026-10-07",
+    "authority": "正式 NAACL 2019 论文；ACL Anthology 官方元数据。",
+    "intro": "理解预训练和下游任务微调。"
+  }
+]

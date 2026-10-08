@@ -1,5 +1,5 @@
-# Publish only the static VALORANT web client; local secrets and Python services are never packaged.
-name: Publish AIU VALORANT preview
+# Publish the VALORANT and Hua Xiao Niu static interfaces without local data or services.
+name: Publish AIU website previews
 
 on:
   push:

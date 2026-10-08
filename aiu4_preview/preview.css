@@ -1,0 +1,6 @@
+/* Responsibility: add the static-preview notice while retaining the original Hua Xiao Niu theme. */
+.preview-notice{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;padding:13px 17px;border:1px solid var(--line);border-radius:8px;background:var(--cream);font-size:11px;line-height:1.8;color:#627557}
+.preview-notice strong{color:var(--green);white-space:nowrap}
+.preview-notice span{flex:1;min-width:220px}
+button:disabled{cursor:not-allowed}
+@media(max-width:760px){.preview-notice{margin-top:15px;padding:12px}.preview-notice span{min-width:0;flex-basis:100%}}

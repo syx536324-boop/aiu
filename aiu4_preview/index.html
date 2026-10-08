@@ -1,44 +1,38 @@
 <!doctype html>
-<!-- Responsibility: show the public, static AIU4 research and translation interface preview. -->
+<!-- Responsibility: provide the research workbench structure; behavior lives in app.js. -->
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AIU4 华小牛研究工作台的静态网页预览。">
-  <title>华小牛 · 研究工作台预览</title>
-  <link rel="stylesheet" href="./style.css">
-  <script defer src="./app.js"></script>
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>华小牛 · Research Harness</title><link rel="stylesheet" href="./style.css?v=hxn-20261008"><link rel="stylesheet" href="./preview.css"></head>
 <body>
-  <aside class="sidebar">
-    <a class="brand" href="#overview"><span class="brand-mark">牛</span><span>华小牛<small>AIU4 · RESEARCH HARNESS</small></span></a>
-    <p class="local-badge"><span></span>公开静态预览</p>
-    <nav aria-label="主导航">
-      <button class="nav-link active" data-view="overview">⌂ <span>工作概览</span></button>
-      <button class="nav-link" data-view="discover">⌕ <span>在线找论文</span></button>
-      <button class="nav-link" data-view="library">▤ <span>我的文献库</span></button>
-    </nav>
-    <div class="sidebar-note"><b>本机版包含完整能力</b><p>联网检索、文献文件、Ollama 逐段翻译和研究记录仍在你的电脑上运行。</p></div>
-  </aside>
-  <main>
-    <header class="topbar"><span id="breadcrumb">工作概览</span><span class="pill">PREVIEW · 静态演示</span></header>
-    <section class="view active" id="overview">
-      <div class="hero"><div><span class="eyebrow">EVIDENCE BEFORE ANSWERS</span><h1>好论文，<br><em>从可靠证据开始。</em></h1><p>先找可信来源，再阅读原文并留下可追溯的研究笔记。</p><div class="actions"><button class="primary" data-go="discover">查看在线找论文</button><button class="secondary" data-go="library">打开我的文献库</button></div></div><div class="loop"><span>RESEARCH LOOP</span><b>01　权威来源</b><i>↓</i><b>02　原文与译文</b><i>↓</i><b>03　证据与笔记</b></div></div>
-      <div class="notice"><b>静态预览说明</b><p>这个公开页面展示翻译模式的界面交互，不连接本机 Ollama，也不包含私人文献和研究笔记。实际翻译由本机版调用本地模型完成。</p></div>
-      <div class="mode-card"><div><span class="eyebrow">OPTIONAL TRANSLATION</span><h2>你可以选择怎么读</h2><p>英文原文模式不生成译文；中英对照模式会在每个英文段落后显示对应中文。</p></div><label>阅读模式<select data-mode><option value="original">不翻译 · 仅英文原文</option><option value="bilingual">中英对照 · 原文与译文逐段对应</option></select></label></div>
-    </section>
-    <section class="view" id="discover" hidden>
-      <div class="heading"><span class="eyebrow">FIND / CHECK / KEEP</span><h1>在线找论文</h1><p>静态预览仅展示界面；本机版才会执行实际在线检索。</p></div>
-      <div class="toolbar"><input aria-label="研究关键词" placeholder="例如：目标检测、智能体、推理" disabled><button class="primary" disabled>本机检索</button></div>
-      <div class="toolbar tools"><label>阅读模式<select data-mode><option value="original">不翻译 · 仅英文原文</option><option value="bilingual">中英对照 · 原文与译文逐段对应</option></select></label><button class="secondary" data-translate>查看翻译示例</button></div>
-      <article class="paper-card"><div class="paper-meta">界面示例 · 不是真实论文记录</div><h2>Example: Reliable Evidence Retrieval</h2><p class="muted">在线检索结果会在本机版显示论文出处、年份、相关性和核验状态。</p><div class="paragraphs" data-paragraphs></div></article>
-    </section>
-    <section class="view" id="library" hidden>
-      <div class="heading"><span class="eyebrow">YOUR READING DESK</span><h1>我的文献库</h1><p>本机版保存已收藏论文、PDF、阅读进度与翻译缓存。</p></div>
-      <div class="toolbar tools"><label>阅读模式<select data-mode><option value="original">不翻译 · 仅英文原文</option><option value="bilingual">中英对照 · 原文与译文逐段对应</option></select></label><button class="secondary" data-translate>查看翻译示例</button></div>
-      <article class="paper-card"><div class="paper-meta">界面示例 · 本页不含本机文献</div><h2>Example: Paragraph-level Bilingual Reading</h2><p class="muted">切换阅读模式，查看英文原文与中文译文逐段对应的效果。</p><div class="paragraphs" data-paragraphs></div></article>
-    </section>
-    <footer>AIU4 / 华小牛 <span>本机模型 · 按需翻译 · 逐段对照</span></footer>
-  </main>
-</body>
-</html>
+<aside class="sidebar">
+  <a class="brand" href="#overview"><span class="brand-mark">牛</span><span>华小牛<small>RESEARCH HARNESS</small></span></a>
+  <div class="workspace-label">个人研究工作台 <span>PREVIEW</span></div>
+  <nav><a href="#overview" data-view="overview">◫ <span>工作概览</span><i>01</i></a><a href="#discover" data-view="discover">⌕ <span>在线找论文</span><i>02</i></a><a href="#papers" data-view="papers">▤ <span>我的文献库</span><i>03</i></a><a href="#chat" data-view="chat">◇ <span>研究对话</span><i>04</i></a><a href="#notes" data-view="notes">▧ <span>评阅与笔记</span><i>05</i></a></nav>
+  <div class="sidebar-foot"><span class="dot"></span>公开静态预览 · 华小牛界面<small>PI AGENT CORE / OLLAMA</small></div>
+</aside>
+<main>
+  <header class="topbar"><span id="breadcrumb">工作概览</span><div><span id="model-state" class="pill">公开界面预览</span><button id="refresh" class="quiet">刷新</button></div></header><div class="preview-notice" role="note"><strong>华小牛 · 静态界面预览</strong><span>沿用本机版界面。可浏览导航、基础文献目录和阅读模式；在线检索、全文翻译、论文收集与研究对话需要本机服务。此页不包含个人文献、任务、笔记或会话。</span></div>
+  <section id="overview" class="view">
+    <div class="hero"><div><span class="eyebrow">YOUR LOCAL RESEARCH COMPANION</span><h1>好论文，<br><em>从可靠证据开始。</em></h1><p>找到权威出处，读懂方法和局限。<br>华小牛帮你检索、收藏、阅读，留下有依据的评阅。</p><div class="hero-actions"><a href="#discover" class="button primary">开始找论文 <span>↗</span></a><a href="#chat" class="button secondary">打开研究对话</a></div></div><div class="flow-visual"><div class="orbit-label">HARNESS / RESEARCH LOOP</div><div class="flow-node"><b>01</b> 研究问题 · 权威出处 <span>DISCOVER</span></div><div class="connector">↓</div><div class="flow-node accent"><b>02</b> 下载原文 · 逐页阅读 <span>READ</span></div><div class="connector">↓</div><div class="flow-node"><b>03</b> 核查证据 · 保存评阅 <span>REVIEW</span></div><div class="flow-caption">模型负责思考，Harness 让行动落地。</div></div></div>
+    <div class="stats"><article><span>已收集文献</span><strong id="count-papers">—</strong><small>原文 + 来源 + 引用</small></article><article><span>研究工具</span><strong id="count-tools">—</strong><small>由 Pi 执行并记录</small></article><article><span>论文评阅卡</span><strong id="count-reviews">—</strong><small>含页码证据的阅读草稿</small></article><article><span>研究笔记</span><strong id="count-notes">—</strong><small>本地 Markdown 文件</small></article></div>
+    <div class="section-heading"><div><span class="eyebrow">RESEARCH LOG</span><h2>最近任务</h2></div><span class="muted">可以停止，过程会保留</span></div><div id="jobs" class="jobs"></div>
+    <div class="scope"><b>筛选依据</b><span>发表出处 / 相关性 / 实验证据 / 复现条件 / 局限</span><p>重点 AI 会议和期刊用于初筛，阅读原文后再评估质量。引用量与会议名都不能代替证据。</p></div>
+  </section>
+  <section id="papers" class="view" hidden>
+    <div class="section-heading"><div><span class="eyebrow">EVIDENCE BEFORE ANSWERS</span><h1>我的文献库</h1><p>精选基础论文与在线加入的候选，保留发表来源和核验状态。</p></div></div>
+    <div class="translation-toolbar"><div class="translation-setting"><span class="plugin-label">中英对照翻译插件 · 本地</span><label>阅读模式 <select data-translation-mode aria-label="文献库阅读模式"><option value="original">不翻译 · 英文原文</option><option value="bilingual">全文中英对照 · 每段保留原文</option></select></label></div><div class="translation-buttons"><button data-translate-list="papers" class="quiet">翻译本页标题/摘要</button><button id="translate-selected" class="button primary">翻译所选论文全部正文</button></div><p data-translation-hint></p></div>
+    <div class="toolbar"><input id="paper-search" placeholder="检索 YOLO、视觉、智能体、会议名称…" aria-label="检索论文"><button id="select-vision" class="button secondary">选择视觉方向</button><button id="collect" class="button primary">收集所选论文</button></div>
+    <div class="info-strip">收集流程：下载开放获取 PDF → 按页提取 Markdown → 保存 BibTeX 和来源。全文翻译包含所有可提取正文、附录和参考文献；图片文字未做 OCR，复杂公式和图表请查看原文。</div><div id="paper-list" class="paper-grid"></div>
+  </section>
+  <section id="chat" class="view" hidden><div class="section-heading"><div><span class="eyebrow">THINK / ACT / OBSERVE</span><h1>研究对话</h1><p>本机版接入本地千问；公开预览展示相同的对话布局。</p></div><button id="new-session" class="button secondary">新建会话</button></div><div class="chat-layout"><aside class="session-panel"><h3>会话记录</h3><div id="sessions"></div></aside><div class="chat-panel"><div id="messages" class="messages"><div class="empty">提出一个研究问题，让华小牛从证据开始。</div></div><div class="prompt-chips"><button data-prompt="请在文献库检索 YOLO，读取已下载原论文的相关页，解释研究问题、方法、实验和局限。没有读到的内容标注未核实，并用 save_review 保存带页码的评阅卡。">带着证据读 YOLO</button><button data-prompt="请在线检索智能体方向的主会论文，列出 5 篇候选，说明出处、相关性以及还需要核查哪些质量证据。">找智能体主会论文</button><button data-prompt="请检索智能体相关论文，下载并阅读 ReAct 前 3 页，说明它与 Harness 的关系，保存中文笔记。">从 ReAct 理解 Harness</button></div><form id="chat-form"><textarea id="prompt" rows="3" maxlength="8000" placeholder="例如：读取 YOLO 论文，整理研究问题、方法和局限，并保存成笔记…" required></textarea><div class="composer-bottom"><small id="session-label">新会话</small><button type="submit" class="button primary">发送给华小牛 ↗</button></div></form></div></div></section>
+  <section id="discover" class="view" hidden>
+    <div class="section-heading"><div><span class="eyebrow">FIND / CHECK / KEEP</span><h1>在线找论文</h1><p>先确认出处，再判断论文是否值得精读。</p></div></div>
+    <div class="translation-toolbar"><div class="translation-setting"><span class="plugin-label">中英对照翻译插件 · 本地</span><label>阅读模式 <select data-translation-mode aria-label="在线找论文阅读模式"><option value="original">不翻译 · 英文原文</option><option value="bilingual">全文中英对照 · 每段保留原文</option></select></label></div><div class="translation-buttons"><button data-translate-list="discover" class="button secondary">翻译本页标题/摘要</button></div><p data-translation-hint></p></div>
+    <form id="discover-form" class="toolbar"><input id="discover-query" placeholder="例如：智能体、目标检测、diffusion、reasoning" value="智能体" maxlength="160" required aria-label="研究关键词"><label class="year-label">从 <input id="discover-year" type="number" min="2010" max="2026" value="2022" aria-label="起始年份"> 年</label><button id="discover-submit" type="submit" class="button primary">检索论文 ↗</button></form>
+    <label class="broad-option"><input id="discover-broad" type="checkbox">扩展公开元数据索引（可能限流；候选发表信息需核对）</label><div class="info-strip">默认检索 ICML 2025、NeurIPS 2025 官方主会目录及精选基础文献。覆盖范围有限；按关键词匹配排序，不是学术质量排名。常见中文方向会映射为英文。选择中英对照后，点击候选的“全文中英对照”会自动加入文献库、下载并翻译整篇可提取正文。</div><div id="discover-summary" class="search-summary"></div><div id="discover-warnings"></div><div id="discover-list" class="paper-grid"></div>
+  </section>
+  <section id="notes" class="view" hidden><div class="section-heading"><div><span class="eyebrow">A TRACEABLE RESEARCH TRAIL</span><h1>研究笔记</h1><p>收集记录、综述和研究草稿由本机版保存在研究工作区中。</p></div></div><div class="notes-layout"><div id="note-list" class="note-list"></div><pre id="note-content" class="document">选择一份笔记查看内容。</pre></div></section>
+  <footer>华小牛 / AIU4 <span>华小牛界面 · 公开静态预览</span></footer>
+</main>
+<dialog id="reader"><div class="reader-head"><h2 id="reader-title">论文正文</h2><button id="close-reader" class="quiet">关闭 ✕</button></div><div class="reader-language"><label>阅读模式 <select data-translation-mode aria-label="正文阅读模式"><option value="original">不翻译 · 英文原文</option><option value="bilingual">全文中英对照 · 每段保留原文</option></select></label><button id="reader-translate" class="button primary" hidden>开始翻译全文</button><a id="bilingual-link" class="quiet" hidden>下载中英对照 .md</a></div><div id="reader-status" class="reader-status" role="status"></div><div class="reader-controls"><button id="prev-page" class="quiet">← 上三页</button><span id="page-label"></span><button id="next-page" class="quiet">下三页 →</button><a id="pdf-link" target="_blank" rel="noopener" class="button secondary">打开原始 PDF ↗</a></div><div id="reader-text" class="document reader-document"></div></dialog>
+<div id="toast" class="toast" hidden></div><script type="module" src="./app.js?v=hxn-20261008"></script>
+</body></html>
