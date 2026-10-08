@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- Responsibility: show the public, static AIU4 research and translation interface preview. -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AIU4 华小牛研究工作台的静态网页预览。">
+  <title>华小牛 · 研究工作台预览</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark">牛</span><span>华小牛<small>AIU4 · RESEARCH HARNESS</small></span></a>
+    <p class="local-badge"><span></span>公开静态预览</p>
+    <nav aria-label="主导航">
+      <button class="nav-link active" data-view="overview">⌂ <span>工作概览</span></button>
+      <button class="nav-link" data-view="discover">⌕ <span>在线找论文</span></button>
+      <button class="nav-link" data-view="library">▤ <span>我的文献库</span></button>
+    </nav>
+    <div class="sidebar-note"><b>本机版包含完整能力</b><p>联网检索、文献文件、Ollama 逐段翻译和研究记录仍在你的电脑上运行。</p></div>
+  </aside>
+  <main>
+    <header class="topbar"><span id="breadcrumb">工作概览</span><span class="pill">PREVIEW · 静态演示</span></header>
+    <section class="view active" id="overview">
+      <div class="hero"><div><span class="eyebrow">EVIDENCE BEFORE ANSWERS</span><h1>好论文，<br><em>从可靠证据开始。</em></h1><p>先找可信来源，再阅读原文并留下可追溯的研究笔记。</p><div class="actions"><button class="primary" data-go="discover">查看在线找论文</button><button class="secondary" data-go="library">打开我的文献库</button></div></div><div class="loop"><span>RESEARCH LOOP</span><b>01　权威来源</b><i>↓</i><b>02　原文与译文</b><i>↓</i><b>03　证据与笔记</b></div></div>
+      <div class="notice"><b>静态预览说明</b><p>这个公开页面展示翻译模式的界面交互，不连接本机 Ollama，也不包含私人文献和研究笔记。实际翻译由本机版调用本地模型完成。</p></div>
+      <div class="mode-card"><div><span class="eyebrow">OPTIONAL TRANSLATION</span><h2>你可以选择怎么读</h2><p>英文原文模式不生成译文；中英对照模式会在每个英文段落后显示对应中文。</p></div><label>阅读模式<select data-mode><option value="original">不翻译 · 仅英文原文</option><option value="bilingual">中英对照 · 原文与译文逐段对应</option></select></label></div>
+    </section>
+    <section class="view" id="discover" hidden>
+      <div class="heading"><span class="eyebrow">FIND / CHECK / KEEP</span><h1>在线找论文</h1><p>静态预览仅展示界面；本机版才会执行实际在线检索。</p></div>
+      <div class="toolbar"><input aria-label="研究关键词" placeholder="例如：目标检测、智能体、推理" disabled><button class="primary" disabled>本机检索</button></div>
+      <div class="toolbar tools"><label>阅读模式<select data-mode><option value="original">不翻译 · 仅英文原文</option><option value="bilingual">中英对照 · 原文与译文逐段对应</option></select></label><button class="secondary" data-translate>查看翻译示例</button></div>
+      <article class="paper-card"><div class="paper-meta">界面示例 · 不是真实论文记录</div><h2>Example: Reliable Evidence Retrieval</h2><p class="muted">在线检索结果会在本机版显示论文出处、年份、相关性和核验状态。</p><div class="paragraphs" data-paragraphs></div></article>
+    </section>
+    <section class="view" id="library" hidden>
+      <div class="heading"><span class="eyebrow">YOUR READING DESK</span><h1>我的文献库</h1><p>本机版保存已收藏论文、PDF、阅读进度与翻译缓存。</p></div>
+      <div class="toolbar tools"><label>阅读模式<select data-mode><option value="original">不翻译 · 仅英文原文</option><option value="bilingual">中英对照 · 原文与译文逐段对应</option></select></label><button class="secondary" data-translate>查看翻译示例</button></div>
+      <article class="paper-card"><div class="paper-meta">界面示例 · 本页不含本机文献</div><h2>Example: Paragraph-level Bilingual Reading</h2><p class="muted">切换阅读模式，查看英文原文与中文译文逐段对应的效果。</p><div class="paragraphs" data-paragraphs></div></article>
+    </section>
+    <footer>AIU4 / 华小牛 <span>本机模型 · 按需翻译 · 逐段对照</span></footer>
+  </main>
+</body>
+</html>

@@ -6,6 +6,7 @@ on:
     branches: [master, main]
     paths:
       - "valorant_platform/web/**"
+      - "aiu4_preview/**"
       - ".github/workflows/publish-pages.yml"
   workflow_dispatch:
 
@@ -29,10 +30,15 @@ jobs:
         uses: actions/checkout@v7
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
+      - name: Assemble static previews
+        run: |
+          mkdir -p _site/aiu4
+          cp -R valorant_platform/web/. _site/
+          cp -R aiu4_preview/. _site/aiu4/
       - name: Upload static site
         uses: actions/upload-pages-artifact@v5
         with:
-          path: valorant_platform/web
+          path: _site
       - name: Deploy site
         id: deployment
         uses: actions/deploy-pages@v5
