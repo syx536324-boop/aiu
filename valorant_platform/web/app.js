@@ -6,20 +6,21 @@ const roleColors = { "决斗": "#ff6471", "先锋": "#c58cff", "控场": "#64d9f
 const roleKeys = { "决斗": "duel", "先锋": "initiator", "控场": "controller", "哨卫": "sentinel" };
 const maps = [
   { slug: "bind", name: "源工重镇", english: "BIND" },
-  { slug: "haven", name: "隐世修所", english: "HAVEN" },
+  { slug: "haven", name: "隐士修所", english: "HAVEN" },
   { slug: "split", name: "霓虹町", english: "SPLIT" },
   { slug: "ascent", name: "亚海悬城", english: "ASCENT" },
   { slug: "icebox", name: "森寒冬港", english: "ICEBOX" },
   { slug: "breeze", name: "微风岛屿", english: "BREEZE" },
   { slug: "fracture", name: "裂变峡谷", english: "FRACTURE" },
   { slug: "pearl", name: "深海明珠", english: "PEARL" },
-  { slug: "lotus", name: "莲华古城", english: "LOTUS" },
+  { slug: "lotus", name: "莲花古城", english: "LOTUS" },
   { slug: "sunset", name: "日落之城", english: "SUNSET" },
   { slug: "abyss", name: "幽邃地窟", english: "ABYSS" },
   { slug: "corrode", name: "盐海矿镇", english: "CORRODE" },
   { slug: "summit", name: "天枢云阙", english: "SUMMIT" }
 ];
 let agents = [];
+let fadeLineups = [];
 let libraryRole = "全部";
 let librarySearch = "";
 let toastTimer;
@@ -71,6 +72,15 @@ function showToast(text, isError = false) {
 
 function roleDotClass(role) {
   return roleKeys[role] || "duel";
+}
+
+function renderLineupCard(entry) {
+  const chapters = entry.chapters.map((chapter) => {
+    const media = chapter.mediaUrl ? `<a class="lineup-media-link" href="${escapeHtml(chapter.mediaUrl)}" target="_blank" rel="noreferrer">查看演示</a>` : `<span class="lineup-media-pending">动图待截取</span>`;
+    const preview = chapter.mediaUrl ? `<img class="lineup-preview" src="${escapeHtml(chapter.mediaUrl)}" alt="${escapeHtml(entry.mapName)} ${escapeHtml(chapter.title)} 技能点位演示" loading="lazy" />` : "";
+    return `<div class="lineup-chapter"><time>${escapeHtml(chapter.time)}</time><span>${escapeHtml(chapter.title)}</span>${media}</div>${preview}`;
+  }).join("");
+  return `<article class="lineup-entry"><div class="lineup-entry-head"><div><span class="lineup-id">${escapeHtml(entry.sourceLabel || "黑梦点位条目")}</span><h3>${escapeHtml(entry.mapName)}</h3></div><span class="lineup-status">${escapeHtml(entry.status)}</span></div>${entry.note ? `<p class="lineup-note">${escapeHtml(entry.note)}</p>` : ""}${entry.chapters.length ? `<div class="lineup-chapters"><div class="lineup-chapters-title">视频章节 · ${entry.chapters.length} 个章节</div>${chapters}</div>` : `<div class="lineup-pending"><span>尚未读取视频章节</span><small>保留原始来源，读取后再补充点位说明与演示动图。</small></div>`}<a class="lineup-source" href="${escapeHtml(entry.sourceUrl)}" target="_blank" rel="noreferrer">打开视频来源 ↗</a></article>`;
 }
 
 function renderMessages() {
@@ -194,6 +204,8 @@ function renderAgent(agent, tabName, mapSlug = "") {
       <h2>${escapeHtml(skill.name)}</h2>
       <p>${escapeHtml(skill.description)}</p>
     </article>`).join("");
+  const selectedLineups = selectedMap && agent.name === "Fade" ? fadeLineups.filter((entry) => entry.mapSlug === selectedMap.slug) : [];
+  const lineupCards = selectedLineups.map(renderLineupCard).join("");
   root.innerHTML = `
     <section class="agent-view">
       <a class="back-link" href="#/library"><span>←</span> 返回特工资料库</a>
@@ -208,7 +220,7 @@ function renderAgent(agent, tabName, mapSlug = "") {
       </nav><small>${isPoints ? "LINEUP NOTES · 待补充" : "DEFAULT PC KEYBINDS · 游戏设置可自定义"}</small></div>
       ${isPoints
         ? selectedMap
-          ? `<div class="map-page-heading"><a href="#/agents/${agentSlug(agent)}?tab=points">← 返回地图列表</a><div><span>${selectedMap.english} // SKILL LINEUPS</span><h2>${selectedMap.name}</h2></div></div><div class="detail-content map-empty-content"><div class="blank-state"><i class="blank-mark" aria-hidden="true"></i><strong>LINEUP DATABASE / EMPTY</strong><span>${selectedMap.name} 点位页面已创建 · 内容暂留空白</span></div></div>`
+          ? `<div class="map-page-heading"><a href="#/agents/${agentSlug(agent)}?tab=points">← 返回地图列表</a><div><span>${selectedMap.english} // SKILL LINEUPS</span><h2>${selectedMap.name}</h2></div></div><div class="detail-content lineup-content">${lineupCards || `<div class="blank-state"><i class="blank-mark" aria-hidden="true"></i><strong>LINEUP DATABASE / EMPTY</strong><span>${selectedMap.name} 暂无已登记条目</span></div>`}</div>`
           : `<section class="map-picker"><div class="map-picker-heading"><div><div class="eyebrow">MAP INDEX // 13 TACTICAL MAPS</div><h2>选择地图</h2><p>选择一张地图，进入对应的技能点位页面。</p></div><span>13 MAPS</span></div><div class="map-grid">${maps.map((map, index) => `
             <a class="map-card" href="#/agents/${agentSlug(agent)}?tab=points&map=${map.slug}">
               <span class="map-card-index">${String(index + 1).padStart(2, "0")} / MAP</span><strong>${map.name}</strong><span class="map-card-bottom"><span>${map.english}</span><span class="card-arrow">↗</span></span>
@@ -365,4 +377,15 @@ fetch("./agents.json").then((response) => {
   renderRoute();
 }).catch(() => {
   root.innerHTML = `<div class="empty-results">特工目录暂时无法加载，请刷新页面。</div>`;
+});
+
+fetch(PUBLIC_STATIC_PREVIEW ? "./fade_lineups.json" : "/api/fade-lineups").then((response) => {
+  if (!response.ok && !PUBLIC_STATIC_PREVIEW) return fetch("./fade_lineups.json");
+  if (!response.ok) throw new Error("黑梦点位目录加载失败");
+  return response.json();
+}).then((data) => {
+  fadeLineups = Array.isArray(data.lineups) ? data.lineups : [];
+  if (agents.length) renderRoute();
+}).catch(() => {
+  fadeLineups = [];
 });

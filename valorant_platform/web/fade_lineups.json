@@ -1,0 +1,201 @@
+{
+  "agent": "fade",
+  "agentName": "黑梦",
+  "updatedAt": "2026-10-08",
+  "notes": [
+    "地图名称以用户提交内容中冒号前的名称为准。",
+    "亚海悬城保留两个条目，不按链接或地图去重。",
+    "仅核对到亚海悬城视频的9个章节标题，两个来源条目独立展示；尚未取得可制作动图的视频素材。"
+  ],
+  "lineups": [
+    {
+      "id": "fade-split-1",
+      "mapSlug": "split",
+      "mapName": "霓虹町",
+      "sourceUrl": "https://v.douyin.com/q8UaYboFtIo/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-haven-1",
+      "mapSlug": "haven",
+      "mapName": "隐士修所",
+      "sourceUrl": "https://v.douyin.com/KY8wbMdjavY/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-lotus-1",
+      "mapSlug": "lotus",
+      "mapName": "莲花古城",
+      "sourceUrl": "https://v.douyin.com/PtkCptAuwh4/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-pearl-1",
+      "mapSlug": "pearl",
+      "mapName": "深海明珠",
+      "sourceUrl": "https://v.douyin.com/cKyK9d9pvWE/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-ascent-1",
+      "mapSlug": "ascent",
+      "mapName": "亚海悬城",
+      "sourceUrl": "https://v.douyin.com/mN_MqWl_J1w/",
+      "sourceLabel": "用户提交条目 1",
+      "status": "已读取视频章节",
+      "chapters": [
+        {
+          "time": "00:07",
+          "title": "A点二楼，回防眼1"
+        },
+        {
+          "time": "00:22",
+          "title": "A点二楼，回防眼2"
+        },
+        {
+          "time": "00:36",
+          "title": "A点，清二楼眼"
+        },
+        {
+          "time": "00:49",
+          "title": "A小，回防眼1"
+        },
+        {
+          "time": "01:01",
+          "title": "A小，回防眼2"
+        },
+        {
+          "time": "01:16",
+          "title": "A小，超阴门洞眼"
+        },
+        {
+          "time": "01:30",
+          "title": "B点，警家回防眼"
+        },
+        {
+          "time": "01:42",
+          "title": "B点，警家看包点回防眼"
+        },
+        {
+          "time": "01:57",
+          "title": "B点市场，回防眼"
+        }
+      ]
+    },
+    {
+      "id": "fade-ascent-2",
+      "mapSlug": "ascent",
+      "mapName": "亚海悬城",
+      "sourceUrl": "https://v.douyin.com/mN_MqWl_J1w/",
+      "sourceLabel": "用户提交条目 2（按要求保留重复）",
+      "status": "已读取视频章节",
+      "chapters": [
+        {
+          "time": "00:07",
+          "title": "A点二楼，回防眼1"
+        },
+        {
+          "time": "00:22",
+          "title": "A点二楼，回防眼2"
+        },
+        {
+          "time": "00:36",
+          "title": "A点，清二楼眼"
+        },
+        {
+          "time": "00:49",
+          "title": "A小，回防眼1"
+        },
+        {
+          "time": "01:01",
+          "title": "A小，回防眼2"
+        },
+        {
+          "time": "01:16",
+          "title": "A小，超阴门洞眼"
+        },
+        {
+          "time": "01:30",
+          "title": "B点，警家回防眼"
+        },
+        {
+          "time": "01:42",
+          "title": "B点，警家看包点回防眼"
+        },
+        {
+          "time": "01:57",
+          "title": "B点市场，回防眼"
+        }
+      ],
+      "note": "两次提供的链接相同，按要求保留独立条目；以下章节来自同一视频，动图尚待取得素材后制作。"
+    },
+    {
+      "id": "fade-fracture-1",
+      "mapSlug": "fracture",
+      "mapName": "裂变峡谷",
+      "sourceUrl": "https://v.douyin.com/gSH00eGGceA/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-bind-1",
+      "mapSlug": "bind",
+      "mapName": "源工重镇",
+      "sourceUrl": "https://v.douyin.com/fRc4sZh3D_A/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-sunset-1",
+      "mapSlug": "sunset",
+      "mapName": "日落之城",
+      "sourceUrl": "https://v.douyin.com/1uUXPtBSNI0/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-corrode-1",
+      "mapSlug": "corrode",
+      "mapName": "盐海矿镇",
+      "sourceUrl": "https://v.douyin.com/F2E5Vm-SyBk/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-icebox-1",
+      "mapSlug": "icebox",
+      "mapName": "森寒冬港",
+      "sourceUrl": "https://v.douyin.com/6DkoAS8MLtk/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-summit-1",
+      "mapSlug": "summit",
+      "mapName": "天枢云阙",
+      "sourceUrl": "https://v.douyin.com/rhk70GgItew/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-breeze-1",
+      "mapSlug": "breeze",
+      "mapName": "微风岛屿",
+      "sourceUrl": "https://v.douyin.com/fPckOD12328/",
+      "status": "待读取视频",
+      "chapters": []
+    },
+    {
+      "id": "fade-abyss-1",
+      "mapSlug": "abyss",
+      "mapName": "幽邃地窟",
+      "sourceUrl": "https://v.douyin.com/M7OMeIn3C2k/",
+      "status": "待读取视频",
+      "chapters": []
+    }
+  ]
+}
