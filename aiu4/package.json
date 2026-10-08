@@ -1,0 +1,14 @@
+{
+  "name": "aiu4-research-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hua Xiao Niu local research harness built on the Pi agent runtime",
+  "engines": { "node": ">=22.19.0" },
+  "scripts": { "start": "node src/main.mjs serve", "collect": "node src/main.mjs collect", "chat": "node src/main.mjs chat" },
+  "dependencies": {
+    "@earendil-works/pi-agent-core": "1.0.4",
+    "@earendil-works/pi-ai": "1.0.4",
+    "typebox": "1.3.27"
+  }
+}

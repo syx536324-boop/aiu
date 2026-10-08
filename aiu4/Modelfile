@@ -1,0 +1,5 @@
+# Responsibility: reuse local Qwen weights with a reading-sized context for this project.
+FROM qwen3.5:4b
+PARAMETER num_ctx 16384
+PARAMETER num_predict 3072
+PARAMETER temperature 0.2

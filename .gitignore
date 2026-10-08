@@ -15,9 +15,25 @@ __pycache__/
 *.pfx
 *.secret
 *.token
+*.pt
+*.onnx
+*.engine
+*.pdf
+*.sqlite
+*.sqlite3
+*.db
+*.mp4
+*.gif
+*.elf
+*.hex
+*.bin
 *credentials*.txt
 *token*.txt
 *secret*.txt
+
+# Generated STM32 IDE state in the consolidated checkout
+aiu3/firmware/led_blink/.settings/
+aiu3/firmware/led_blink/.mxproject
 
 # Local knowledge may contain private user documents
 knowledge/*.md

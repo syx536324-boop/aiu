@@ -1,0 +1,10 @@
+{
+  "name": "华小牛",
+  "port": 8784,
+  "model": "aiu4-research:latest",
+  "ollamaUrl": "http://127.0.0.1:11434",
+  "contextWindow": 16384,
+  "maxOutputTokens": 3072,
+  "maxTurns": 12,
+  "runTimeoutSeconds": 600
+}

@@ -1,0 +1,9 @@
+[project]
+name = "aiu3"
+version = "0.1.0"
+description = "STM32 and local AI hardware integration workspace"
+requires-python = ">=3.12,<3.13"
+dependencies = ["pyserial==3.5"]
+
+[tool.uv]
+package = false

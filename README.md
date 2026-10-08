@@ -1,5 +1,18 @@
 # AIU 本地 AI 智能体项目
 
+## 统一仓库
+
+这个仓库收录四个项目。AIU 保留在仓库根目录，其他项目位于各自的子目录；从 GitHub 克隆后进入对应目录运行。
+
+| 项目 | 目录 | 用途 |
+| --- | --- | --- |
+| AIU | 仓库根目录 | 本地智能体、Dify 文件桥接、VALORANT 资料网站 |
+| AIU2 | [aiu2/](aiu2/) | YOLO 训练示例、摄像头实时推理、CPU/GPU 切换与 C++ 实验 |
+| AIU3 | [aiu3/](aiu3/) | STM32F103C8T6 点灯固件与主机串口工具 |
+| AIU4 | [aiu4/](aiu4/) | 华小牛论文检索、阅读和中英对照本地应用 |
+
+各项目有独立依赖和启动说明。GitHub Pages 发布的网页预览位于 `valorant_platform/web/` 和 `aiu4_preview/`；完整的 AI 对话、摄像头推理、串口与论文翻译需要在本机运行。虚拟环境、模型权重、论文原文与译文、个人笔记、密钥、日志和编译产物不进入仓库。
+
 ## 当前模型
 
 Ollama 在本机提供模型 API：`http://127.0.0.1:11434`。当前已安装 `qwen3.5:4b`。
@@ -14,7 +27,7 @@ Ollama 在本机提供模型 API：`http://127.0.0.1:11434`。当前已安装 `q
 
 自托管 Dify 已部署到本机 Docker Desktop，Ollama 插件已连接本机 `qwen3.5:4b`。智能体“千问本地智能体”已配置代码计算、时间查询、网页抓取和本机知识文件工具。
 
-启动入口：双击桌面的“启动 Dify 智能体”快捷方式，或运行 `start-dify.ps1`。它会启动 Ollama、Docker Desktop、文件服务和 Dify Compose，并打开智能体页面：`http://127.0.0.1/chat/XDl3dp5fj0mhW7mH`。停止服务运行 `stop-dify.ps1`；该脚本停止文件服务和 Dify，保留数据库和文件卷。Docker Desktop 开机自启动已关闭。
+启动入口：双击桌面的“启动 Dify 智能体”快捷方式，或运行 `start-dify.ps1`。它会启动 Ollama、Docker Desktop、文件服务和 Dify Compose，并打开本机智能体页面。停止服务运行 `stop-dify.ps1`；该脚本停止文件服务和 Dify，保留数据库和文件卷。Docker Desktop 开机自启动已关闭。
 
 管理控制台：`http://127.0.0.1/signin`。本地管理员账号及智能体 API 密钥保存在 `.setup/dify-admin-credentials.txt` 和 `.setup/dify-agent-api.txt`，两个文件均已限制 Windows 文件访问权限，并由 `.gitignore` 排除。不要把 API 密钥放进浏览器端代码或提交到 GitHub。
 

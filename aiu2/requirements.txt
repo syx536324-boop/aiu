@@ -1,0 +1,4 @@
+# Core runtime; install a CUDA-enabled PyTorch build separately when required.
+torch>=2.6
+ultralytics==8.4.173
+opencv-python==5.0.0.93

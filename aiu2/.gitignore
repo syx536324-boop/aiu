@@ -1,0 +1,26 @@
+.venv/
+.uv-cache/
+.config/
+.tmp/
+models/
+datasets/
+runs/
+__pycache__/
+*.pyc
+weights/
+.native-cache/
+
+# Local credentials and generated binaries
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+credentials*.txt
+*.pt
+*.onnx
+*.engine
+*.exe
+*.dll
+*.pdb
+*.log
